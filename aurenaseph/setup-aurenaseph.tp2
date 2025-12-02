@@ -21,7 +21,7 @@ ALWAYS
   END
   
   ACTION_DEFINE_ARRAY tra#reload BEGIN setup END
-  ACTION_DEFINE_ARRAY tra#noconvert BEGIN END
+  ACTION_DEFINE_ARRAY tra#noconvert BEGIN install END
   LAF HANDLE_CHARSETS INT_VAR infer_charsets = 1 STR_VAR tra_path = ~aurenaseph~ noconvert_array = tra#noconvert reload_array = tra#reload iconv_path = ~aurenaseph/iconv~ END
 END
 
@@ -44,6 +44,10 @@ LANGUAGE ~Francais~
 LANGUAGE ~Spanish~
          ~spanish~
          ~AurenAseph\spanish\Setup.tra~
+
+LANGUAGE ~Simplified Chinese (by anca_qin)~
+         ~Schinese~
+         ~AurenAseph\Schinese\install.tra~
 
 BEGIN @0
 LABEL ~AurenAseph-main~
